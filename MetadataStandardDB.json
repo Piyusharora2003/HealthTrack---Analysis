@@ -1,0 +1,28 @@
+{
+    "fileName" : "StandardDB.csv",
+    "delimiter" : ",",
+    "$schema": {
+        "Gender": {
+            "type": "string" ,
+            "enum": ["Male", "Female"]
+        },
+        "Height": {
+            "type": "number",
+            "unit": "cm",
+            "minimum": 45,
+            "maximum": 300
+        },
+        "Weight": {
+            "type": "number",
+            "unit": "kg",
+            "minimum": 0,
+            "maximum": 300
+        },
+        "Index": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 5,
+            "description": "0 - Extremely Weak, 1 - Weak, 2 - Normal, 3 - Overweight, 4 - Obesity, 5 - Extreme Obesity"
+        }
+    }
+}
